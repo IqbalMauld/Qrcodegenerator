@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #262626;
+}
+.container{
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(211, 211, 211);
+}
+.container p{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.container input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    gap: 10px;
+}
+.container button{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: rgb(47, 213, 255);
+    border: none;
+}
+.container button:hover{
+    background-color: aqua;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+#imgQrcode {
+    padding: 10px 0;
+    margin-left: 80px;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 1;
+    --g: conic-gradient(from -90deg at 10px 10px,#191919 90deg,#0000 0);
+    background: var(--g), var(--g), var(--g);
+    background-size: 50% 50%;
+    animation: l16 1s infinite;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: none;
+  }
+  @keyframes l16 {
+     0%   {background-position:0    0   ,10px 10px,20px 20px} 
+     50%  {background-position:0    20px,10px 10px,20px 0   } 
+     100% {background-position:20px 20px,10px 10px,0    0   } 
+  }
